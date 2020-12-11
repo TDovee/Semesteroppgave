@@ -444,7 +444,7 @@ footer h1 {
 	align-items: center;
 	justify-content: center;
 	text-transform: uppercase;
-	color: var(--lyseblå);
+	color: black;
 	text-shadow: var(--shadow);
 	height: 300px;
 	background-image: url(../media/bilde3.jpg);
@@ -486,12 +486,12 @@ footer h1 {
 
 /*BILDER*/
 
-#småbilder img {
+.småbilder img {
 	width: 400px;
 	padding: 20px;
 }
 
-#småbilder {
+.småbilder {
 	width: 50%;
 	display: flex;
 	justify-content: center;
