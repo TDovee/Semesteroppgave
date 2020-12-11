@@ -1,0 +1,563 @@
+:root {
+	--blå: #0457ac;
+	--lyseblå: #308fac;
+	--grønn: #37bd79;
+	--lime: #a7e237;
+	--gul: #f4e604;
+	--kull: #36454f;
+	--lysegrå: #666;
+	--shadow: 0 1px 5px rgba(104, 104, 104,0.8);
+}
+
+
+*{
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: snow;
+}
+
+
+.grind-container {
+	display: grid;
+}
+
+
+/*HEADER*/
+
+#active {
+	background-color: var(--blå);
+	color: white;
+}
+
+.vitmerlogo img {
+	max-width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 50px;
+}
+
+.header-container {
+	display: flex;
+	align-items: center;
+	padding: 25px;
+}
+
+.nav-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 150px;
+}
+
+.nav-container a {
+	padding: 10px 20px;
+	margin: 10px;
+	color: white;
+	background-color: var(--lyseblå);
+	border-radius: 42px;
+	box-shadow: var(--shadow);
+
+}
+
+.nav-container a:hover {
+	color: white;
+	background-color: var(--blå);
+}
+
+/*MAIN*/
+
+
+.main-container {
+	background-image: url("../media/bakgrunn123.jpg");
+	background-repeat: no-repeat;
+	position: relative;
+	width: 100%;
+	height: 650px;
+	background-position: center center;
+	background-size: cover;
+	opacity: 0.9;
+	z-index: 1;
+}
+
+.main-container::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: .6;
+	z-index: -1;
+}
+
+.overskrift-hjem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.overskrift-hjem h1 {
+	color: white;
+	margin-top: 175px;
+	text-shadow: var(--shadow);
+}
+.overskrift-hjem h2 {
+	color: white;
+	text-shadow: var(--shadow);
+}
+
+.cta-hjem {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.cta-hjem a {
+	padding: 20px 32px;
+	margin: 10px;
+	color: white;
+	background-color: var(--lyseblå);
+	border-radius: 42px;
+	box-shadow: var(--shadow);
+
+}
+
+.cta-hjem a:hover {
+	color: white;
+	background-color: var(--blå);
+}
+
+
+
+
+/*SECTION*/
+
+.section-tittel {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 100px;
+	font-size: 42px;
+	text-transform: uppercase;
+	color: var(--lyseblå);
+	text-shadow: var(--shadow);
+}
+
+
+.section-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	padding-left: 200px;
+	padding-right: 200px;
+	grid-gap: 20px;
+	background-color: var(--lyseblå);
+
+}
+
+.section-items {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-color: snow;
+	flex-wrap: wrap;
+	height: 300px;
+	width: 300px;
+	box-shadow: var(--shadow);
+}
+
+.section-items i {
+	font-size: 40px;
+	margin-top: 20px;
+}
+
+.section-items h1 {
+	text-transform: uppercase;
+	padding: 10px;
+	margin-top: 30px;
+	color: var(--kull);
+}
+
+.section-items p {
+	max-width: 200px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	color: var(--lysegrå);
+}
+
+.wave1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 0px;
+}
+
+/*FOOTER*/
+
+.footer-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 200px;
+}
+
+footer h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 42px;
+	text-transform: uppercase;
+	color: var(--lyseblå);
+	text-shadow: var(--shadow);
+}
+
+.footerlogo img {
+	max-width: 100%;
+}
+
+.footerlogo p {
+	max-width: 300px;
+	text-align: center;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 75px;
+	color: var(--lysegrå)
+}
+
+
+.footer1 {
+	display: flex;
+	flex-direction: column;
+	min-width: 33%;
+	padding: 10px;
+	align-items: center;
+}
+
+.footer2 {
+	display: flex;
+	flex-direction: column;
+	min-width: 33%;
+	padding: 10px;
+	align-items: center;
+}
+
+.footer3 {
+	display: flex;
+	flex-direction: column;
+	min-width: 33%;
+	padding: 10px;
+}
+
+
+.footer1 ul li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 25px;
+}
+
+
+.footer1 a {
+	padding: 10px;
+	margintop: 10px;
+	color: var(--lyseblå)
+}
+
+.footer2 i {
+	font-size: 42px;
+	justify-content: space-between;
+	display: flex;
+	padding: 15px;
+	margin-top: 20px;
+}
+
+.footer2 ul li {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+}
+
+.footer3 input {
+	border: none;
+	border-bottom: 2px solid var(--lyseblå);
+	width: 100%;
+	height: 32px;
+	font-size: 17px;
+	padding-left: 14px;
+	line-height: 147.6%;
+	padding-top: 14px;
+	padding-bottom: 8px;
+	background-color: lightgrey;
+	margin-top: 50px;
+}
+
+.footer3 a {
+	margin-top: 10px;
+	width: 100%;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: var(--lyseblå);
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.fa-instagram {
+   color: #d6249f;
+}
+
+.fa-facebook {
+	color: #3b5998
+}
+
+.fa-linkedin-in {
+	color: #4875b4
+}
+
+.fa-youtube {
+	color: #ff3333
+}
+
+.fa-twitter {
+	color: #1baae1
+}
+
+.fa-search {
+	color: var(--kull);
+}
+
+.fa-info {
+	color: var(--kull);
+}
+
+.fa-atom {
+	color: var(--kull);
+}
+
+
+
+
+
+
+
+/*EXPLORE*/
+
+.exploremain {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	color: var(--lyseblå);
+	text-shadow: var(--shadow);
+	height: 300px;
+	background-image: url(../media/celso-405219.jpg);
+	background-position: center;
+}
+
+
+#exploreh1 {
+	font-size: 64px;
+}
+
+.blåoghvit {
+	background-color: var(--lyseblå);
+	display: flex;
+	text-align: left;
+	padding-left: 100px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.blåoghvit h1 {
+	display: flex;
+	font-size: 42px;
+	text-transform: uppercase;
+	color: white;
+	text-shadow: var(--shadow);
+	text-align: left;
+	margin-left: 30px;
+}
+
+.blåoghvit p {
+	max-width: 900px;
+	color: white;
+	font-size: 19px;
+	line-height: 25px;
+	letter-spacing: 0px;
+	font-weight: 300;
+	font-style: normal;
+	margin-top: 30px;
+}
+
+.svartoghvit {
+	display: flex;
+	text-align: left;
+	padding-left: 100px;
+	flex-wrap: wrap;
+}
+
+.svartoghvit h1 {
+	display: flex;
+	font-size: 42px;
+	text-transform: uppercase;
+	color: black;
+	text-shadow: var(--shadow);
+	text-align: left;
+	margin-left: 30px;
+	padding-top: 100px;
+}
+
+.svartoghvit p {
+	max-width: 900px;
+	color: black;
+	font-size: 19px;
+	line-height: 25px;
+	letter-spacing: 0px;
+	font-weight: 300;
+	font-style: normal;
+	margin-top: 30px;
+}
+
+
+
+
+
+/*EXHIBITION*/
+
+
+
+.exhibitionmain {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	color: var(--lyseblå);
+	text-shadow: var(--shadow);
+	height: 300px;
+	background-image: url(../media/bilde3.jpg);
+	background-position: center;
+}
+
+
+#exhibitionh1 {
+	font-size: 64px;
+}
+
+
+
+
+
+/*INFO*/
+
+
+.infomain {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	color: var(--lyseblå);
+	text-shadow: var(--shadow);
+	height: 300px;
+	background-image: url(../media/bilde2.jpg);
+	background-position: center;
+}
+
+
+#infoh1 {
+	font-size: 64px;
+}
+
+#infofooter {
+	margin-top: 300px;
+}
+
+/*BILDER*/
+
+#småbilder img {
+	width: 400px;
+	padding: 20px;
+}
+
+#småbilder {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*hamburger*/
+
+
+
+.hamburger {
+	background-color: transparent;
+	border: 0;
+	color: var(--lyseblå);
+	font-size: 64px;
+	display: none;
+	width: 100%;
+	cursor: pointer;
+}
+
+.fa-bars {
+	float: right;
+	padding: 20px;
+}
+
+.hamburger:focus {
+	outline: none;
+}
+
+
+
+/*media*/
+
+@media (max-width: 950px) {
+	.nav-container {
+		display: none;
+	}
+
+	.hamburger {
+		display: block;
+	}
+}
+
+@media (max-width: 1170px) {
+	.footer1 {
+		width: 100%
+	}
+
+	.footer2 {
+		width: 100%
+	}
+
+	.footer3 {
+		width: 95%
+	}
+
+	.footer3 input {
+		padding: 30px;
+	}
+
+	.section-tittel h1 {
+		font-size: 60px;
+	}
+
+	.footer-container {
+		margin-top: 20px;
+	}
+}
+
